@@ -3,7 +3,7 @@
 /* ----- variables ----- */
 :root {
     --color-black: #080808;
-    --color-grey-100: #ababab;
+    --color-grey-100: #040404;
     --color-grey-200: #898989;
     --color-grey-300: #5a5a5a;
     --color-grey-400: #222222;
@@ -14,8 +14,10 @@
     --color-pink: #ed52cb;
     --color-yellow: #ffae13;
     --color-red: #ee1d36;
-    --color-green: #00d722;
+    --color-green:#065f46;
     --color-purple: #7a3dff;
+    --color-esmerald-50: #ecfdf5;
+
 }
 
 * {
@@ -31,7 +33,7 @@ html {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: var(--color-black);
+    background-color: var(--color-esmerald-50);
 }
 
 
@@ -44,13 +46,13 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--color-blue);
+    background-color: var(--color-green);
     color: var(--color-white);
     padding: 2rem;
 }
 
 .nav-bar {
-    background-color: var(--color-black);
+    background-color: var(--color-esmerald-50);
     box-shadow: 0 1px rgba(117, 117, 117, .2);
     display: flex;
     align-items: center;
@@ -68,11 +70,11 @@ html {
 }
 
 .nav-bar__ul li:hover{
-    border-bottom: 4px solid var(--color-blue);
+    border-bottom: 4px solid var(--color-green);
 }
 
 .nav-bar__ul li > a {
-    color: var(--color-white);
+    color: var(--color-black);
     text-decoration: none;
 }
 
