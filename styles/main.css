@@ -8,7 +8,7 @@
     --color-grey-300: #5a5a5a;
     --color-grey-400: #222222;
     --color-grey-500: #171717;
-    --color-white: white;
+    --color-white: #FFFFFF;
     --color-blue: #146ef5;
     --color-orange: #ff6b00;
     --color-pink: #ed52cb;
@@ -16,7 +16,8 @@
     --color-red: #ee1d36;
     --color-green:#065f46;
     --color-purple: #7a3dff;
-    --color-esmerald-50: #ecfdf5;
+    --color-emerald-50: #ecfdf5;
+    --color-emerald-100: #d1fae5;
 
 }
 
@@ -33,7 +34,7 @@ html {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-color: var(--color-esmerald-50);
+    background-color: var(--color-emerald-50);
 }
 
 
@@ -52,7 +53,7 @@ html {
 }
 
 .nav-bar {
-    background-color: var(--color-esmerald-50);
+    background-color: var(--color-emerald-50);
     box-shadow: 0 1px rgba(117, 117, 117, .2);
     display: flex;
     align-items: center;
@@ -70,7 +71,8 @@ html {
 }
 
 .nav-bar__ul li:hover{
-    border-bottom: 4px solid var(--color-green);
+    box-shadow: inset 0 -4px var(--color-green);
+    background-color: var(--color-emerald-100);
 }
 
 .nav-bar__ul li > a {
@@ -109,7 +111,7 @@ html {
     height: 400px;
     padding: 1rem;
     border-radius: 1rem;
-    border: 1px solid var(--color-grey-200);
+    border: 2px solid var(--color-green);
 }
 
 .product__image {
@@ -117,7 +119,8 @@ html {
 }
 
 .product__title {
-    color: var(--color-white);
+    color: var(--color-black);
+    font-weight: 600;
 }
 
 .product__description {
@@ -125,14 +128,36 @@ html {
 }
 
 .mapa {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
     width: 100%;
-    height: 50vh;
-    background-color: var(--color-pink);
-    margin-bottom: 2rem;
+    padding: 1rem;
+}
+
+.mapa__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+}
+
+.mapa__title {
+    color: var(--color-black);
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.mapa__description {
+    color:var(--color-grey-200)
 }
 
 footer {
     width: 100%;
     height: 20vh;
-    background-color: var(--color-purple);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-green);
+    color: var(--color-white);
+    margin-top: 2rem;
 }
